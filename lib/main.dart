@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:fruit_hub/core/helpers/on_generated_routes.dart';
+import 'package:fruit_hub/features/splash/presentaion/views/splash_view.dart';
 
 import 'generated/l10n.dart';
 
@@ -22,6 +23,7 @@ class FruitHubApp extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       onGenerateRoute: onGenerateRoute,
+      initialRoute: SplashView.routeName,
     );
   }
 }
