@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:fruit_hub/core/helpers/on_generated_routes.dart';
 
 import 'generated/l10n.dart';
 
@@ -20,6 +21,7 @@ class FruitHubApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
+      onGenerateRoute: onGenerateRoute,
     );
   }
 }
