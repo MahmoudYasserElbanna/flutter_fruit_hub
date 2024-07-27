@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fruit_hub/core/utils/app_icons.dart';
+import 'package:fruit_hub/core/utils/styles.dart';
 
 import 'page_view_item.dart';
 
@@ -9,7 +10,7 @@ class OnBoardingPageViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageView(
-      children: const [
+      children: [
         PageViewItem(
           backgroundImage: Assets.imagesPageViewBgImage1,
           image: Assets.imagesPageViewImage1,
@@ -20,37 +21,26 @@ class OnBoardingPageViewBody extends StatelessWidget {
             children: [
               Text(
                 'مرحبًا بك في',
-                style: TextStyle(
-                  color: Color(0xFF0C0D0D),
-                  fontSize: 24,
-                  fontFamily: 'Cairo',
-                  fontWeight: FontWeight.w700,
+                style: Style.textStyle24.copyWith(
+                  color: const Color(0xFF1B5E37),
                 ),
               ),
               Text(
                 'HUB',
-                style: TextStyle(
-                  color: Color(0xFFF4A91F),
-                  fontSize: 24,
-                  fontFamily: 'Cairo',
-                  fontWeight: FontWeight.w700,
-                  height: 0,
+                style: Style.textStyle24.copyWith(
+                  color: const Color(0xFFF4A91F),
                 ),
               ),
               Text(
                 'Fruit',
-                style: TextStyle(
-                  color: Color(0xFF1B5E37),
-                  fontSize: 24,
-                  fontFamily: 'Cairo',
-                  fontWeight: FontWeight.w700,
-                  height: 0,
+                style: Style.textStyle24.copyWith(
+                  color: const Color(0xFF1B5E37),
                 ),
               ),
             ],
           ),
         ),
-        PageViewItem(
+        const PageViewItem(
           image: Assets.imagesPageViewImage2,
           backgroundImage: Assets.imagesPageViewBgImage2,
           description:
@@ -58,12 +48,7 @@ class OnBoardingPageViewBody extends StatelessWidget {
           title: Text(
             'ابحث وتسوق',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Color(0xFF0C0D0D),
-              fontSize: 23,
-              fontFamily: 'Cairo',
-              fontWeight: FontWeight.w700,
-            ),
+            style: Style.textStyle24,
           ),
         ),
       ],
