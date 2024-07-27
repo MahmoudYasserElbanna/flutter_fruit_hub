@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fruit_hub/core/utils/app_icons.dart';
-import 'package:fruit_hub/core/utils/styles.dart';
+import 'package:fruit_hub/core/utils/app_styles.dart';
 
 import 'page_view_item.dart';
 
